@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025학년도 주요대학 모집요강</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', 'Nanum Myeongjo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f7e3e1, #e3f0f7);
+            min-height: 100vh;
+            position: relative;
+        }
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/api/placeholder/1080/720');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #3498db;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            font-size: 2.5em;
+        }
+        h2 { 
+            color: #000000;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 2em; 
+        }
+        h3 { 
+            color: #000000;
+            text-align: left;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em; 
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .main-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .main-button:hover {
+            background-color: #2980b9;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+        }
+        th {
+            background-color: #90EE90;
+            font-weight: bold;
+            color: #006400;
+            text-align: center;
+        }
+        td {
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f0fff0;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1>2025학년도 주요대학 모집요강</h1>
+        <div id="searchContainer">
+            <select id="universitySelect" onchange="showUniversity()">
+                <option value="">대학을 선택하세요</option>
+                <option value="가천대">가천대학교</option>
+            <option value="가톨릭대">가톨릭대학교</option>
+<option value="건국대">건국대학교</option>
+<option value="건국글">건국대학교 글로컬캠퍼스</option>
+<option value="건양대">건양대학교</option>
+<option value="경기대">경기대학교</option>
+<option value="경희대">경희대학교</option>
+<option value="고려대">고려대학교</option>
+<option value="고려대세종">고려대학교 세종캠퍼스</option>
+<option value="광운대">광운대학교</option>
+<option value="국민대">국민대학교</option>
+<option value="단국대">단국대학교</option>
+<option value="대구가톨릭대">대구가톨릭대학교</option>
+<option value="덕성여대">덕성여자대학교</option>
+<option value="동국대">동국대학교</option>
+<option value="동덕여대">동덕여자대학교</option>
+<option value="목포해양대">목포해양대학교</option>
+<option value="부산대">부산대학교</option>
+<option value="삼육대">삼육대학교</option>
+<option value="상명대">상명대학교</option>
+<option value="서강대">서강대학교</option>
+<option value="서울과기대">서울과학기술대학교</option>
+<option value="서울대">서울대학교</option>
+<option value="서울여대">서울여자대학교</option>
+<option value="성균관대">성균관대학교</option>
+<option value="성신여대">성신여자대학교</option>
+<option value="세종대">세종대학교</option>
+<option value="순천향대">순천향대학교</option>
+<option value="숙명여대">숙명여자대학교</option>
+<option value="숭실대">숭실대학교</option>
+<option value="아주대">아주대학교</option>
+<option value="연세대">연세대학교</option>
+<option value="연세대미래">연세대학교(미래캠퍼스)</option>
+<option value="을지대">을지대학교</option>
+<option value="용인대">용인대학교</option>
+<option value="이화여대">이화여자대학교</option>
+<option value="인제대">인제대학교</option>
+<option value="인천대">인천대학교</option>
+<option value="인하대">인하대학교</option>
+<option value="중앙대">중앙대학교</option>
+<option value="차의과대">차의과학대학교</option>
+<option value="한국기술교육대">한국기술교육대학교</option>
+<option value="한국외대">한국외국어대학교</option>
+<option value="한국항공대">한국항공대학교</option>
+<option value="한국해양대">한국해양대학교</option>
+<option value="한동대">한동대학교</option>
+<option value="한성대">한성대학교</option>
+<option value="한양대">한양대학교</option>
+<option value="한양대ERICA">한양대학교 ERICA</option>
+<option value="홍익대">홍익대학교</option>
+            </select>
+        </div>
+        <div id="resultContainer"></div>
+        <a href="index.html" class="main-button">메인으로</a>
+    </div>
+
+    <script>
+        const universityInfo = {
+            "서울대": `
+                <h2>서울대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 2024.7.11.(목) 17:00</td></tr>
+                    <tr><td>면접구술시험 대상자 발표</td><td>2024.8.23.(금) 17:00</td></tr>
+                    <tr><td>면접구술시험</td><td>2024.8.31.(토)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.9.9.(월) 17:00</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>전 교육과정 해외 이수자</td><td>서류평가 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>전 교육과정 해외 이수자</td><td>약간명</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>학업능력, 모집단위 관련 적성, 언어능력, 학업 및 학업 외 활동 등을 종합적으로 평가하여 선발</td></tr>
+                </table>
+            `,
+            "연세대": `
+                <h2>연세대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 2024.7.10.(수) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 10:00 ~ 2024.7.11.(목) 17:00</td></tr>
+                    <tr><td>면접구술시험 대상자 발표</td><td>2024.8.23.(금) 17:00</td></tr>
+                    <tr><td>면접구술시험</td><td>2024.8.31.(토)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.9.9.(월) 17:00</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외 이수자 (3년)</td><td>1단계: 서류평가 100% (모집인원의 3배수 선발)<br>2단계: 1단계 서류평가 60% + 면접평가 40%</td></tr>
+                    <tr><td>전 교육과정 해외 이수자 (12년)</td><td>서류평가 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외 이수자 (3년)</td><td>70명</td></tr>
+                    <tr><td>전 교육과정 해외 이수자 (12년)</td><td>약간명</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>학업역량, 진로역량, 공동체역량 등을 종합적으로 평가하여 선발</td></tr>
+                </table>
+            `,
+            "고려대": `
+                <h2>고려대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 2024.7.10.(수) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 10:00 ~ 2024.7.11.(목) 17:00</td></tr>
+                    <tr><td>면접구술시험 대상자 발표</td><td>2024.8.9.(금) 17:00</td></tr>
+                    <tr><td>면접구술시험</td><td>2024.8.14.(수) 12:30</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.9.6.(금) 17:00</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(정원외2%)전형 (3년)</td><td>1단계: 서류 100%<br>2단계: 1단계 성적 70% + 면접 30%</td></tr>
+                    <tr><td>전교육과정해외이수자전형 (12년)</td><td>서류 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(정원외2%)전형 (3년)</td><td>78명</td></tr>
+                    <tr><td>전교육과정해외이수자전형 (12년)</td><td>약간명</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>학업능력, 모집단위 관련 적성, 언어능력, 학업 및 학업 외 활동 등을 종합적으로 평가하여 선발</td></tr>
+                </table>
+            `,
+            "서강대": `
+                <h2>서강대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 2024.7.11.(목) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 10:00 ~ 2024.7.14.(일) 17:00</td></tr>
+                    <tr><td>면접시험(북한이탈주민)</td><td>2024.8.21.(수)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.9.6.(금) 17:00 예정</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중고교과정 해외이수자 (3년)</td><td>서류평가 100%</td></tr>
+                    <tr><td>전교육과정 해외이수자 (12년)</td><td>서류평가 100%</td></tr>
+                    <tr><td>북한이탈주민</td><td>1단계: 서류평가 60%<br>2단계: 면접평가 40%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중고교과정 해외이수자 (3년)</td><td>31명</td></tr>
+                    <tr><td>전교육과정 해외이수자 (12년)</td><td>제한없음</td></tr>
+                    <tr><td>북한이탈주민</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>고등학교 성적증명서, 학교생활보충자료 등을 종합적으로 정성평가</td></tr>
+                </table>
+            `,
+            "성균관대": `
+                <h2>성균관대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 2024.7.11.(목) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 10:00 ~ 2024.7.12.(금) 14:00</td></tr>
+                    <tr><td>면접대상자 대상자 발표</td><td>2024.8.16.(금)</td></tr>
+                    <tr><td>면접시험</td><td>2024.8.23.(금)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.9.13.(금)</td></tr>
+                </table>
+                    <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외 이수자 (3년)</td><td> 서류평가 100%</td></tr>
+                    <tr><td>전 교육과정 해외 이수자 (12년)</td><td>서류평가 100%</td></tr>
+                </table>
+                    <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외 이수자 (3년)</td><td>인문 34명<br>자연 31명<br>의예 2명<br>약학 3명</td></tr>
+                    <tr><td>전 교육과정 해외 이수자 (12년)</td><td>약간명</td></tr>
+                </table>
+                    <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>(필수) 교과 성적, (선택) 수상 실적, 어학 능력, 봉사활동 등 교내·외 활동, 체류 국가의 대학입학시험 성적 등 
+            활동 증빙자료를 종합 심사함</td></tr>
+                </table>
+            `,    
+            "중앙대": `
+                <h2>중앙대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th colspan="2">구분</th><th colspan="2">일정</th></tr>
+                    <tr><td colspan="2">원서접수<td><td>2024.07.08.(월) 10:00 ~ 07.10.(수) 18:00</td></tr>
+                    <tr>
+                        <td rowspan="5">서류 제출</td>
+                        <td rowspan="2">① 온라인 입력</td>
+                        <td>지원 자격 심사신청서, 학력조회동의서 및 의뢰서</td>
+                        <td>2024. 7. 8.(월) 10:00 ~ 10.(수) 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>학업능력 입증서류 목록(선택)</td>
+                        <td>2024. 7. 8.(월) 10:00 ~ 12.(금) 16:00</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">②, ③, ④ 온라인 업로드</td>
+                        <td>② 학업 관련 서류</td>
+                        <td rowspan="3">2024. 7. 11.(목) 10:00 ~ 12.(금) 16:00</td>
+                    </tr>
+                    <tr>    
+                        <td>③ 학업능력 입증서류(선택)</td>
+                    </tr>
+                    <tr>s                
+                        <td>④ 학업 외 서류</td>
+                    </tr>
+                    <tr><td colspan="3">최초 합격자 발표</td><td>2024.09.06.(금) 14:00</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중고교과정 해외이수자 (3년)</td><td>서류평가 100%</td></tr>
+                    <tr><td>전교육과정 해외이수자 (12년)</td><td>서류평가 100%</td></tr>
+                    <tr><td>의학부/약학부</td><td>1단계 : 서류평가 100%(5배수)<br>2단계 : 1단계 성적 60%, 심층면접 40%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중고교과정 해외이수자 (3년)</td><td>약학부 1명, 의학부 2명, 상기 외 전체 84명<br>전체 87명</td></tr>
+                    <tr><td>전교육과정 해외이수자 (12년)</td><td>제한 없음</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>학업역량(학업성취도, 학업태도, 탐구력)<br>진로역량(전공적합성, 진로 탐색 활동과 경험)<br>공동체역량(의사소통능력, 리더십/협력, 성실성, 나눔과 배려)</td></tr>
+                </table>
+            `,
+            "이화여대": `
+                <h2>이화여자대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>인터넷 원서접수</td><td>2024.07.09.(화) 13:00 ~ 07.11.(목) 17:00</td></tr>
+                    <tr><td>지원자격심사<br>신청서 입력</td><td>2024.07.09.(화) 13:00 ~ 07.12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.07.09.(화) 13:00 ~ 07.12.(금) 17:00</td></tr>
+                    <tr><td>최초합격자 발표</td><td>2024.09.05.(목) 예정</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중고교과정 해외이수자 (3년)</td><td>서류 100%</td></tr>
+                    <tr><td>전교육과정 해외이수자 (12년)</td><td>서류 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중고교과정 해외이수자 (3년)</td><td>인문 25명, 자연 24명<br>스크랜톤대학 2명, 사범대학 9명<br>총 63명</td></tr>
+                    <tr><td>전교육과정 해외이수자 (12년)</td><td>모집단위별 약간 명</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>학업성취우수성, 활동우수성 및 발전가능성을 종합적으로 평가함</td></tr>
+                </table>
+            `,
+            "국민대": `
+                <h2>국민대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.07.08.(월) 10:00 ~ 07.12.(금) 18:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.07.08.(월) 10:00 ~ 07.14.(일) 16:00</td></tr>
+                    <tr><td>면접 및 실기고사</td><td>2024.07.20.(토) </td></tr>
+                    <tr><td>최초 합격자 발표</td><td>2024.09.04.(수) 17:00 예정</td></tr> 
+                
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중고교과정 해외이수자 (3년)</td><td>서류평가 100%<br>조형대학 : 면접고사 100%<br>공연예술학부 연극전공: 실기고사 100%</td></tr>
+                    <tr><td>전교육과정 해외이수자 (12년)</td><td>면접고사 100%<br>공연예술학부 연극전공: 실기고사 100% </td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중고교과정 해외이수자 (3년)</td><td>57명</td></tr>
+                    <tr><td>전교육과정 해외이수자 (12년)</td><td>제한 없음</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>자기주도성(30), 도전정신(20), 전공잠재력(25), 학업능력(15), 공동체의식 및 협동능력(10)</td></tr>
+                </table>
+            `,
+            "한양대": `
+                <h2>한양대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>중고교과정 해외이수자 (3년)<br> 1단계 : 2024.07.09.(화) 10:00 ~ 07.11.(목) 17:00 <br> 2단계 : 2024.07.24.(수) 10:00 ~ 07.26.(금) 17:00<br>전교육과정 해외이수자 (12년)<br> 2024.07.09.(화) 10:00 ~ 07.11.(목) 17:00 </td></tr>
+                    <tr><td>서류제출</td><td>중고교과정 해외이수자 (3년)<br> 1단계 : 2024.07.09.(화) 10:00 ~ 07.12.(금) 17:00 <br> 2단계 : 2024.07.24.(수) 10:00 ~ 07.26.(금) 17:00<br>전교육과정 해외이수자 (12년)<br> 2024.07.09.(화) 10:00 ~ 07.12.(금) 17:00</td></tr>
+                    <tr><td>의예과 면접고사</td><td>2024.08.01.(목) </td></tr>
+                    <tr><td>최종합격자 발표</td><td>2024.09.05.(목) </td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중고교과정 해외이수자 (3년)</td><td>1단계 : 서류평가 100%, 2단계 : 1단계 점수 80% + 2단계 서류평가 20%</td></tr>
+                    <tr><td>전교육과정 해외이수자 (12년)</td><td>서류평가 100%<br> 의예과 : 1단계 서류 100%, 2단계 면접고사 100%<br>음악대학/무용학과 : 작품심사 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중고교과정 해외이수자 (3년)</td><td>자연 29명, 인문 24명, 국제 3명<br>총 56명</td></tr>
+                    <tr><td>전교육과정 해외이수자 (12년)</td><td>제한 없음</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>1단계(학업역량평가) : 고등학교 성적증명서 및 기타활동 증빙서류 등을 바탕으로 고교 교육과정의 충실한 이수 및 학업역량을 종합적으로 평가<br> 2단계(심층서류평가) : 기타활동 증빙서류를 바탕으로 인성, 잠재력, 계열적합성 평가 </td></tr>
+                </table>    
+            `,
+            "숭실대": `
+                <h2>숭실대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.07.08.(월) 10:00 ~ 07.12.(금) 18:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.07.08.(월) 10:00 ~ 07.12.(금) 18:00</td></tr>
+                    <tr><td>최초합격자 발표</td><td>2024.09.13.(금)</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 국외이수자</td><td>서류평가 100%</td></tr>
+                    <tr><td>전 교육과정 국외이수자</td><td>서류평가 100%</td></tr>
+                    <tr><td>북한이탈주민</td><td>서류평가 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 국외이수자</td><td>53명</td></tr>
+                    <tr><td>전 교육과정 국외이수자</td><td>모집인원 제한없음</td></tr>
+                    
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>학업 역량, 활동 역량(전공적합성, 성실성), 잠재 역량(발전가능성, 인성)<br>모집인원에 미달되더라도 수학능력이 현저히 부족하다고 판단되는 자는 선발하지 않을 수 있음</td></tr>
+                </table>
+            `,
+            "한양대ERICA": `
+                <h2>한양대학교 ERICA 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.07.10.(수) 10:00 ~ 07.12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.07.10.(수) 10:00 ~ 07.15.(월) 17:00</td></tr>
+                    <tr><td>면접고사(전 과정/새터민)</td><td>2024.07.22.(월) 14:00 예정</td></tr>
+                    <tr><td>최초합격자 발표</td><td>2024.09.03.(화)</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외이수자</td><td>1단계: 서류평가 100%<br>2단계: 서류평가 100%(자격심사)</td></tr>
+                    <tr><td>전 교육과정 해외이수자</td><td>1단계: 면접고사 성적 100%<br>2단계: 면접고사 성적 100%(자격심사)</td></tr>
+                    <tr><td>새터민(북한이탈주민)</td><td>1단계: 면접고사 성적 100%<br>2단계: 면접고사 성적 100%(자격심사)</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외이수자</td><td>39명</td></tr>
+                    <tr><td>전 교육과정 해외이수자</td><td>모집단위별 약간명</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>학업 역량(50%)<br> 진로 역량(30%)<br>공동체 역량(20%)</td></tr>
+                </table>
+            `,
+            "가천대": `
+            <h2>가천대학교  2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일시</th></tr>
+                <tr><td>원서접수</td><td>2024. 07. 08(월) 10:00 ~ 12(금) 16:00</td></tr>
+                <tr><td>서류제출</td><td>2024. 07. 08(월) 10:00 ~ 12(금) 16:00</td></tr>
+                <tr><td>동영상 업로드(12년)</td><td>2024. 07. 22(월) 10:00 ~ 22(화) 15:00 </td></tr>
+                <tr><td>면접고사일(3년, 의예과, 약학과)</td><td>2024. 07. 23(화) ~ 24(수)</td></tr>
+                <tr><td>합격자 발표</td><td>2024. 08. 22(목)</td></tr>
+            </table>
+            <h3>2. 전형방법</h3>
+            <table>
+                <tr><th>전형유형</th><th>전형방법</th></tr>
+                <tr><td>전체 모집단위</td><td>서류평가 50% + 면접평가 50%</td></tr>
+            </table>
+            <h3>3. 모집인원</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>중·고교과정 해외이수자</td><td>80명(간호 10명, 보건 12명, 의예과 3명, 약학과 1명)</td></tr>
+                <tr><td>전 교육과정 해외이수자</td><td>모집단위별 약간명</td></tr>
+            </table>
+            <h3>4. 선발기준</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>평가영역</td><td>인성, 계열(전공)적합성, 학업역량</td></tr>
+            </table>
+        `,
+        "건국대": `
+            <h2>건국대학교  2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일시</th></tr>
+                <tr><td>원서접수</td><td>2024. 7. 9.(화) 10:00 ~ 7. 11.(목) 17:00</td></tr>
+                <tr><td>서류제출</td><td>2024. 7. 9.(화) 10:00 ~ 7. 11.(목) 17:00</td></tr>
+                <tr><td>필기고사</td><td>2024. 7. 26.(금) 10:00~11:40</td></tr>
+                <tr><td>면접평가</td><td>2024. 8. 6.(화) 10:00~17:00</td></tr>
+                <tr><td>최초합격자 발표</td><td>2024. 9. 13.(금) 14:00</td></tr>
+            </table>
+            <h3>2. 전형방법</h3>
+            <table>
+                <tr><th>자격</th><th>모집단위</th><th>전형방법</th></tr>
+                <tr><td>3년</td><td>인문/자연/수의예과</td><td>필기고사 100%</td></tr>
+                <tr><td>3년</td><td>예체능</td><td>1단계: 필기고사 100% (3배수 선발)<br>2단계: 1단계 성적 60% + 면접평가 40%</td></tr>
+                <tr><td>12년</td><td>인문/자연</td><td>서류평가 100%</td></tr>
+                <tr><td>12년</td><td>예체능/수의예과</td><td>1단계: 서류평가 100% (3배수 선발)<br>2단계: 1단계 성적 60% + 면접평가 40%</td></tr>
+            </table>
+            <h3>3. 모집인원</h3>
+            <table>
+                <tr><th>구분</th><th>인원</th></tr>
+                <tr><td>중·고교과정 해외이수자</td><td>60명(수의과 3명)</td></tr>
+                <tr><td>전 교육과정 해외이수자</td><td>모집단위별 약간명</td></tr>
+            </table>
+            <h3>4. 필답고사 정보</h3>
+                <table>
+                    <tr><th>계열</th><th>과목</th><th>문항 수</th><th>시간</th></tr>
+                    <tr><td>인문/예체능</td><td>국어 50%, 영어 50%</td><td>영어 40문항, 국어 40문항</td><td>영어+국어 100분</td></tr>
+                    <tr><td>자연</td><td>영어 50%, 수학 50%</td><td>영어 40문항, 수학 25문항</td><td>영어+수학 100분</td></tr>
+                </table>
+            <h3>5. 면접고사 정보</h3>
+            <table>
+                <tr><th>구분</th><th>평가요소</th></tr>
+                <tr><td>예체능/수의예과(12년)</td><td>학업역량(30%), 진로역량(30%), 공동체역량(40%) </td></tr>
+                    
+            </table>    
+            <h3>6. 선발기준</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>평가요소</td><td>제출된 서류를 기반으로 학업역량(70%), 진로역량(30%)을 종합적으로 정성평가함</td></tr>
+            </table>
+        `,
+        "경희대": `
+                <h2>경희대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일시</th></tr>
+                    <tr><td>원서접수</td><td>2024. 7. 8(월) 10:00 ~ 7. 10(수) 18:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 7. 8(월) 10:00 ~ 7. 12(금) 17:00</td></tr>
+                    <tr><td>필답/면접고사</td><td>2024. 7. 20(토) 09:00</td></tr>
+                    <tr><td>비대면 면접고사</td><td>2024. 7. 16(화) ~ 7. 18(목) 16:00</td></tr>
+                    <tr><td>합격자 발표</td><td>2024. 8. 20(화)</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(해외근무자자녀)</td><td>필답고사 100%</td></tr>
+                    <tr><td>해외에서 전 교육과정 이수자</td><td>면접고사 100%</td></tr>
+                  
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(해외근무자자녀)</td><td>94명</td></tr>
+                    <tr><td>해외에서 전 교육과정 이수자</td><td>제한 없음</td></tr>
+                    
+                </table>
+                <h3>4. 필답고사 정보</h3>
+                <table>
+                    <tr><th>계열</th><th>과목</th><th>문항 수</th><th>시간</th></tr>
+                    <tr><td>인문/예체능</td><td>국어 40%, 영어 60%</td><td>국어 40문항, 영어 40문항</td><td>과목당 60분</td></tr>
+                    <tr><td>자연</td><td>영어 40%, 수학 60%</td><td>영어 40문항, 수학 30문항</td><td>과목당 60분</td></tr>
+                </table>
+                <h3>5. 면접고사 정보</h3>
+                <table>
+                    <tr><th>구분</th><th>내용시간</th></tr>
+                    <tr><td>비대면 면접고사<br>(동영상 업로드)</td><td>4분 이내의 영상(인성50%, 학업적성 50%)</td></tr>
+                    <tr><td>한의예과(12년)</td><td>2인 1조, 10분 이내(인성 50%, 학업적성 50%)</td></tr>
+                </table>
+        `,
+        "가톨릭대": `    
+                <h2>가톨릭대학교  2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일시</th></tr>
+                    <tr><td>원서접수</td><td>2024. 7. 9(화) ~ 7. 12(금)</td></tr>
+                    <tr><td>서류제출</td><td>2024. 7. 9(화) ~ 7. 16(화)(국내 등기우편)</td></tr>
+                    <tr><td>면접고사(일반)</td><td>2024. 8. 2(금) 09:00~</td></tr>
+                    <tr><td>면접고사(의예/간호)</td><td>2024. 8. 18(일) 09:00~</td></tr>
+                    <tr><td>합격자 발표</td><td>2024. 8. 30(금) 14:00예정</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(3년)</td><td>면접고사(일반) 100%<br>의예과 : 1단계 서류평가 100%, 2단계 1단계 70%, 면접 30%<br>간호학과 : 필답 100%</td></tr>
+                    <tr><td>해외에서 전 교육과정 이수자(12년)</td><td>면접고사 100%</td></tr>
+                    <tr><td>북한이탈주민</td><td>면접고사 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(해외근무자자녀)</td><td>통합선발 24명, 의예과 3명, 간호학과 5명<br> 총 32명</td></tr>
+                    <tr><td>해외에서 전 교육과정 이수자</td><td>제한 없음</td></tr>
+                    <tr><td>북한이탈주민</td><td>제한 없음</td></tr>
+                </table>
+                <h3>4. 필답고사 정보</h3>
+                <table>
+                    <tr><th>계열</th><th>과목</th><th>문항 수</th><th>시간</th></tr>
+                    <tr><td>간호</td><td>국어 50%,영어 50%</td><td>국어 35문항, 영어 40문항</td><td>과목당 90분</td></tr>
+                </table>
+                <h3>5. 면접고사 정보</h3>
+                <table>
+                    <tr><th>구분</th><th>내용시간</th></tr>
+                    <tr><td>면접고사(3년/12년)</td><td>전공수학능력, 인성  및 가치관, 한국어  구사능력 
+등을 평가함 </td></tr>
+                    <tr><td>의예과</td><td>전공수학능력, 인성 및 성장잠재력, 논리적 사고력 
+및 표현력 등을 종합적으로 평가함</td></tr>
+                </table>
+        `,
+        "경기대": `    
+                <h2>경기대학교  2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일시</th></tr>
+                    <tr><td>원서접수</td><td>2024. 7. 8(월) ~ 7. 12(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 7. 8(월) ~ 7. 17(금) 17:00</td></tr>
+                    <tr><td>면접고사</td><td>2024. 8. 7(수)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024. 8. 20(화)</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(해외근무자자녀)</td><td>면접고사 100%</td></tr>
+                    <tr><td>해외에서 전 교육과정 이수자</td><td>면접고사 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(해외근무자자녀)</td><td>수원 36명, 서울 22명<br>총 58명</td></tr>
+                    <tr><td>해외에서 전 교육과정 이수자</td><td>제한 없음</td></tr>
+                </table>
+                <h3>4. 면접고사 정보</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가방법</td><td>일반소양(학업계획, 소통역량), 전공소양(전공이해도, 잠재역량)</td></tr>
+                    
+                </table>
+        `,
+        "동국대": `
+                <h2>동국대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024. 07. 10.(수) 10:00 ~ 07. 12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 07. 10.(수) 10:00 ~ 07. 13.(토) 17:00</td></tr>
+                    <tr><td>필답고사</td><td>2024. 07. 21.(일)</td></tr>
+                    <tr><td>최초합격자 발표</td><td>2024. 08. 22.(목) 예정</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(일반)/북한이탈주민</td><td>[1단계] 필답고사 100% (6배수 선발)<br>[2단계] 지원자격 심사 P/F</td></tr>
+                    <tr><td>전교육과정국외이수자</td><td>[일괄] 서류종합평가 100% + 지원자격 심사 P/F</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(일반)</td><td>인문 33명, 자연 21명, 총 54명</td></tr>
+                    <tr><td>전교육과정국외이수자/북한이탈주민</td><td>모집단위별 약간 명</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>선발방법</td><td>모집단위별 총점 성적순으로 선발</td></tr>
+                </table>
+                <h3>5. 필답고사 안내</h3>
+                <table>
+                    <tr><th>계열</th><th>과목</th><th>문항 수</th><th>시간</th></tr>
+                    <tr><td>인문계열/영화영상학과</td><td>국어 + 영어</td><td>국어 25문항, 영어 25문항</td><td>80분</td></tr>
+                    <tr><td>자연계열</td><td>수학 + 영어</td><td>수학 25문항, 영어 25문항</td><td>100분</td></tr>
+                </table>
+                <h3>6. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가항목</td><td>학업역량, 계열적합성, 주도성 및 협업소통능력</td></tr>
+                </table>
+        `,
+        "단국대": `    
+                <h2>단국대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024. 7. 8.(월) 10:00 ~ 7. 12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 7. 8.(월) 10:00 ~ 7. 15.(월) 17:00</td></tr>
+                    <tr><td>필기고사</td><td>2024. 7. 18.(목) 10:00 ~ 11:00</td></tr>
+                    <tr><td>최초합격자 발표</td><td>2024. 9. 4.(수) 16:00</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외이수자(3년)</td><td>1단계 : 필기고사 100%, 2단계 : 서류심사(P/F)</td></tr>
+                    <tr><td>전교육과정 해외이수자(12년)</td><td>서류평가 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외이수자(3년)</td><td>죽전 79명, 천안 12명 </td></tr>
+                    <tr><td>전교육과정 해외이수자(12년)</td><td>제한 없음</td></tr>
+                </table>
+                <h3>4. 필기고사</h3>
+                <table>
+                    <tr><th>계열</th><th>과목</th><th>문항 수</th><th>시간</th></tr>
+                    <tr><td>인문</td><td>국어 40%, 영어 60%</td><td> 국어 20문항, 영어 20문항</td><td>60분</td></tr>
+                    <tr><td>자연</td><td>영어 40%, 수학 60%</td><td> 수학 15문항, 영어 20문항</td><td>60분</td></tr>
+                </table>
+        `,
+        "광운대": `    
+                <h2>광운대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024. 7. 9.(화) 10:00 ~ 7. 12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 7. 23.(화)</td></tr>
+                    <tr><td>면접고사</td><td>2024. 7. 23.(화)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024. 9. 6.(금) 15:00</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(3년)</td><td>면접고사 100%</td></tr>
+                    <tr><td>전교육과정이수 재외국민(12년)</td><td>면접고사 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민</td><td>33명</td></tr>
+                    <tr><td>전교육과정이수 재외국민/새터민</td><td>제한 없음</td></tr>
+                </table>
+                <h3>4. 면접고사 정보</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가항목</td><td>전공적합성(40%), 학업계획 및 포부(30%), 의사소통능력(30%)</td></tr>
+                    
+                </table>  
+             
+        `,    
+        "대구가톨릭대": `
+                <h2>대구가톨릭대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일시</th></tr>
+                    <tr><td>원서접수</td><td>2024. 07. 08.(월) ~ 07. 12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 07. 08.(월) ~ 07. 12.(금) 17:00</td></tr>
+                    <tr><td>필답고사(의예과, 약학부)</td><td>2024. 08. 13.(화)</td></tr>
+                    <tr><td>면접고사(의예과)</td><td>2024. 08. 27.(화)</td></tr>
+                    <tr><td>면접고사(의예과 제외)</td><td>2024. 08. 29.(목)</td></tr>
+                    <tr><td>최초합격자 발표</td><td>2024. 09. 06.(금) 이전</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>모집단위</th><th>전형방법</th></tr>
+                    <tr><td>전 모집단위(의예과, 약학부 제외)</td><td>면접고사 100%</td></tr>
+                    <tr><td>의예과, 약학부</td><td>[1단계] 공인영어성적 20%, 필답고사 80%(5배수)<br>[2단계] 1단계 성적 20% + 면접고사 80%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(3년)</td><td>약간명(입학정원의 10%이내), 의예과(2명 이내), 약학부(5명 이내)</td></tr>
+                    <tr><td>전교육과정이수자(12년)</td><td>약간명(입학정원의 10%이내), 의예과(2명 이내), 약학부(5명 이내)</td></tr>
+                </table>
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가항목</td><td>인성, 가치관, 전공의 이해도, 사고력, 의사소통 능력, 품위 및 안정감 등 6가지 항목은 각 10점 만점, 한국어 구사능력(구술, 표현, 필기능력 등)항목은 
+40점 만점으로 평가함</td></tr>
+                </table>
+                <h3>5. 필답고사 (의예과, 약학부)</h3>
+                <table>
+                    <tr><th>과목</th><th>배점</th><th>시간</th></tr>
+                    <tr><td>화학</td><td>500점</td><td>100분</td></tr>
+                    <tr><td>생물</td><td>500점</td><td>100분</td></tr>
+                </table>
+        `,
+        "덕성여대": `    
+                <h2>덕성여자대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024. 7. 8.(월) 14:00 ~ 7. 12.(금) 16:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 7. 8.(월) 14:00 ~ 7. 19.(금) 16:00</td></tr>
+                    <tr><td>최초합격자 발표</td><td>2024. 8. 30.(금) 11:00</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외이수자(3년)</td><td>서류평가 100%</td></tr>
+                    <tr><td>전교육과정 해외이수자(12년)</td><td>서류평가 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외이수자(3년)</td><td>23명</td></tr>
+                    <tr><td>전교육과정 해외이수자(12년)</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 서류평가</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>발전역량(30%), 학업역량(45%), 덕성역량(25%)</td></tr>
+                </table>
+        `,
+        "한양대ERICA": `
+                <h2>한양대학교 ERICA 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 7.12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 10:00 ~ 7.15.(월) 17:00</td></tr>
+                    <tr><td>최종합격자 발표</td><td>2024.9.5.(목)</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외이수자(3년)</td><td>서류평가 100%</td></tr>
+                    <tr><td>전교육과정 해외이수자(12년)</td><td>서류평가 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외이수자(3년)</td><td>69명</td></tr>
+                    <tr><td>전교육과정 해외이수자(12년)</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>평가 요소</th></tr>
+                    <tr><td>
+                        - 모집단위별 총점 순으로 선발<br>
+                        - 동점자 처리기준: 서류평가 요소 중 진로탐구역량, 공동체역량, 기초학업역량 순으로 고득점자 우선 선발
+                    </td></tr>
+                </table>
+            `,
+            "인하대": `
+                <h2>인하대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 09:00 ~ 7.12.(금) 18:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 09:00 ~ 7.15.(월) 15:00</td></tr>
+                    <tr><td>필답고사</td><td>2024.7.25.(목)</td></tr>
+                    <tr><td>면접고사(의예과)</td><td>2024.8.8.(목)</td></tr>
+                    <tr><td>최종합격자 발표</td><td>2024.9.5.(목)</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외이수자(3년)</td><td>1단계: 필답고사 100%, 2단계: 서류심사 Pass/Fail</td></tr>
+                    <tr><td>의예과</td><td>1단계 : 필답고사 100%(10배수), 2단계 : 1단계 60%, 면접 40%+서류심사 Pass/Fail</td></tr>
+                    <tr><td>전교육과정 해외이수자(12년)</td><td>서류평가 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외이수자(3년)</td><td>인문 25명, 자연 41명, 의예과 1명, 간호학과 2명<br>총 69명</td></tr>
+                    <tr><td>전교육과정 해외이수자(12년)</td><td>적정인원</td></tr>
+                </table>
+                <h3>4. 필답고사</h3>
+                <table>
+                    <tr><th>계열</th><th>과목</th><th>시간</th></tr>
+                    <tr><td>인문</td><td>영어 50%, 국어 50%</td><td>영어 50분, 국어 50분</td></tr>
+                    <tr><td>자연</td><td>영어 50%, 수학 50%</td><td>영어 50분, 수학 50분</td></tr></td></tr>
+                </table>
+                <h3>5. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>의예과</td><td>면접내용 : 자기이해 및 가치관, 전공에 대한 관심 및 발전가능성, 전공에 대한 기본소양 등<br>출제범위 : 생명과학(I, Ⅱ), 생활과 윤리, 윤리와 사상</td></tr>
+                </table>
+            `,
+            "한국항공대": `
+                <h2>한국항공대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 09:00 ~ 7.12.(금) 18:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.26.(금) 09:00 ~ 8.9.(금) 16:00</td></tr>
+                    <tr><td>필답고사</td><td>2024.7.18.(목) 10:30 ~ 11:45</td></tr>
+                    <tr><td>최종합격자 발표</td><td>2024.9.11.(수)</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외이수자(3년)</td><td>필답고사 100%</td></tr>
+                    <tr><td>전교육과정 해외이수자(12년)</td><td>서류평가 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외이수자(3년)</td><td>16명</td></tr>
+                    <tr><td>전교육과정 해외이수자(12년)</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 필답고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>전 모집단위</td><td>수학 100점(75분)</td></tr>
+                </table>
+            `,   
+            "한국해양대": `
+                <h2>한국해양대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.07.08.(월) 09:00 ~ 07.12.(금) 18:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.07.08.(월) 09:00 ~ 07.19.(금) 18:00</td></tr>
+                    <tr><td>면접고사</td><td>2024.08.22.(목) 14:00</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.09.12.(목) 14:00 예정</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>구분</th><th>전형요소 및 반영비율</th></tr>
+                    <tr><td>중·고교과정 국외이수자 (3년)</td><td>면접고사 100점(TOPIK 가산점 5점 이내)</td></tr>
+                    <tr><td>전 교육과정 국외이수자 (12년)</td><td>면접고사 100점(TOPIK 가산점 5점 이내)</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>구분</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 국외이수자 (3년)</td><td>약간명(27명 이내)</td></tr>
+                    <tr><td>전 교육과정 국외이수자 (12년)</td><td>제한없음</td></tr>
+                
+                </table>
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>면접방법</th><th>내용</th></tr>
+                    <tr><td>평가항목</td><td>비대면고사(답변영상 촬영 후 제출)</td><td>인성(40점), 전공적합성(40점), 발전가능성(20점)</td></tr>
+                </table>
+            `,
+            "한국외대": `
+                <h2>한국외국어대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.07.08.(월) 10:00 ~ 07.10.(수) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.07.08.(월) 10:00 ~ 07.11.(목) 17:00</td></tr>
+                    <tr><td>면접영상업로드(12년)</td><td>2024.07.15.(월) 10:00 ~ 07.17.(수) 17:00</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.09.02.(월)</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>구분</th><th>전형요소 및 반영비율</th></tr>
+                    <tr><td>중·고교과정 국외이수자 (3년)</td><td>서류평가 100%</td></tr>
+                    <tr><td>전 교육과정 국외이수자 (12년)</td><td>면접고사 100%</td></tr>
+                
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>구분</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 국외이수자 (3년)</td><td>서울 50명, 글로벌 17명<br> 총 67명</td></tr>
+                    <tr><td>전 교육과정 국외이수자 (12년)</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td>학업역량(30%), 진로역량(50%), 공동체역량(20%)</td></tr>
+                </table>
+            `,
+            "홍익대": `
+                <h2>홍익대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.07.08.(월) 09:00 ~ 07.12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.07.25.(목) ~ 08.02.(금) </td></tr>
+                    <tr><td>필기고사</td><td>2024.07.20.(토) 10:00까지 입실</td></tr>
+                    <tr><td>면접고사</td><td>2024.08.09.(급) </td></tr>
+                    <tr><td>합격자 발표</td><td>2024.10.18.(금) </td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>구분</th><th>전형요소 및 반영비율</th></tr>
+                    <tr><td>중·고교과정 국외이수자 (3년)</td><td>[서울] 1단계: 필기고사 100%, 2단계: 필기고사 80% + 서류평가 20%<br>[세종] 서류심사 100%</td></tr>
+                    <tr><td>전 교육과정 국외이수자 (12년)</td><td>서류심사 100%</td></tr>
+                    <tr><td>미술계열</td><td>[3년] 1단계: 필기고사 100%, 2단계: 1단계 60% + 면접고사 40%<br> [12년]1단계: 서류심사 100%, 2단계: 1단계 60% + 면접고사 40%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>구분</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 국외이수자 (3년)</td><td>서울 48명, 세종 25명<br> 총 73명</td></tr>
+                    <tr><td>전 교육과정 국외이수자 (12년)</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 필답고사</h3>
+                <table>
+                    <tr><th>계열</th><th>과목</th><th>문항수</th><th>시간</th></tr>
+                    <tr><td>인문/미술</td><td>영어 100%%</td><td>영어 30문항</td><td>60분</td></tr>
+                    <tr><td>자연</td><td>영어 50%, 수학 50%</td><td>영어 20문항, 수학 10문항</td></tr>영어+수학 60분</td></tr>
+                </table>
+                <h3>5. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>미술</td><td>지원자의 미술관련 소양, 창의성, 표현능력, 제출서류의 진실성 등을 종합적으로 평가</td></tr>
+                </table>
+            `,    
+            "삼육대": `
+                <h2>삼육대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 2024.7.15.(월) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 10:00 ~ 2024.7.15.(월) 17:00 </td></tr>
+                    <tr><td>합격자 발표</td><td>2024.8.14.(수)</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외이수자 (3년)</td><td>서류평가 100%</td></tr>
+                    <tr><td>전 교육과정 해외이수자 (12년)</td><td>서류평가 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외이수자 (3년)</td><td>23명 이내</td></tr>
+                    <tr><td>전 교육과정 해외이수자 (12년)</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>서류평가 성적 순으로 선발</td><td>학업역량(30%), 진로역량(50%), 공동체역량(20%)</td></tr>
+                </table>
+            `,
+            "상명대": `
+                <h2>상명대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 2024.7.12.(금) 18:00 </td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 10:00 ~ 2024.7.16.(화) 17:00 </td></tr>
+                    <tr><td>면접고사</td><td>2024.8.13.(화)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.9.5.(목) 14:00 </td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외이수자 (3년)</td><td>면접 100%</td></tr>
+                    <tr><td>전 교육과정 해외이수자 (12년)</td><td>면접 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외이수자 (3년)</td><td>52명</td></tr>
+                    <tr><td>전 교육과정 해외이수자 (12년)</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가항목</td><td>다대일면접평가, 10분<br>전공적합성 35%, 발전가능성 30%, 인성 25%, 의사소통능력 10%</td></tr>
+                    
+                </table>
+            `,
+            "세종대": `
+                <h2>세종대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10시 ~ 2024.7.11.(목) 17시</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 10시 ~ 2024.7.12.(금) 17시</td></tr>
+                    <tr><td>영어 필답고사</td><td>2024.7.19.(금) 10시</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.9.6.(금) 17시 예정</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>중·고교과정 해외이수자 (3년)</td><td>영어 필답고사 100%</td></tr>
+                    <tr><td>전 교육과정 해외이수자 (12년)</td><td>영어 필답고사 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>중·고교과정 해외이수자 (3년)</td><td>50명</td></tr>
+                    <tr><td>전 교육과정 해외이수자 (12년)</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 필답고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>모든 계여</td><td>영어 60문항 내외, 80분(오답감점제 적용)</td></tr>
+                </table>
+            `,
+             "고려대세종": `
+                <h2>고려대학교 세종캠퍼스 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 7.11.(목) 18:00</td></tr>
+                    <tr><td>온라인 서류제출</td><td>2024.7.8.(월) 10:00 ~ 7.12.(금) 18:00</td></tr>
+                    <tr><td>면접(약학과)</td><td>2024.8.13.(화) 10:00</td></tr>
+                    <tr><td>최종합격자 발표</td><td>2024.8.30.(금) 17:00</td></tr>
+                </table>
+                <h3>2. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(정원외 2%)</td><td>26명(약학과 3명)</td></tr>
+                    <tr><td>전 교육과정 이수자(12년)</td><td>약간명</td></tr>
+                </table>
+                <h3>3. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(정원외 2%)</td><td>전 모집단위(약학과 제외): 서류 100%<br>약학과: 서류 70% + 면접 30%</td></tr>
+                    <tr><td>전 교육과정 이수자(12년)</td><td>전 모집단위(약학과 제외): 서류 100%<br>약학과: 서류 70% + 면접 30%</td></tr>
+                    
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가영역</td><td>학업역량, 진로역량, 공동체역량</td></tr>
+                   
+                </table>
+                <h3>5. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>약학과</td><td>다대일면접, 제출서류 기반 인적성 면접<br>전공적합성, 사고력 및 표현력, 공동체역량</td></tr>
+                    
+                </table>
+            `,
+            "부산대": `
+                <h2>부산대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024. 7. 9.(화) 10:00 ~ 7. 12.(금) 18:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 7. 9.(화) ~ 7. 15.(월) (09:00~18:00)</td></tr>
+                    <tr><td>면접고사 및 실기고사</td><td>2024. 8. 27.(화)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024. 9. 25.(수) 16:00 (예정)</td></tr>
+                </table>
+                <h3>2. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(입학정원 2%이내)</td><td>76명 이내</td></tr>
+                    <tr><td>전 교육과정 이수자(12년)</td><td>약간명</td></tr>
+                </table>
+                <h3>3. 전형방법</h3>
+                <table>
+                    <tr><th>계열</th><th>전형요소</th><th>전형총점</th></tr>
+                    <tr><td>인문·사회/자연</td><td>서류평가 30점 + 면접고사 70점</td><td>100점</td></tr>
+                    <tr><td>예술 (실기고사 실시 학과)</td><td>면접고사 50점 + 실기고사 50점</td><td>100점</td></tr>
+                </table> 
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가영역</td><td>전공수행 기초능력, 인성 및 사회성</td></tr>
+                    
+                </table> 
+            `,
+            "동덕여대": `
+            <h2>동덕여자대학교 2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일정</th></tr>
+                <tr><td>원서접수</td><td>2024.07.08.(월) 12:00 ~ 07.12.(금) 18:00</td></tr>
+                <tr><td>서류제출</td><td>2024.07.08.(월) 12:00 ~ 07.16.(화) 18:00</td></tr>
+                <tr><td>최초합격자 발표</td><td>2024.08.30.(금) 17:00 예정</td></tr>
+            </table>
+            <h3>2. 모집단위 및 모집인원</h3>
+            <table>
+                <tr><th>전형</th><th>모집인원</th></tr>
+                <tr><td>재외국민과 외국인(2% 이내)</td><td>인문+자연 19명, 예술 11명<br>총 30명 이내</td></tr>
+                <tr><td>전교육과정 해외이수자</td><td>제한없음</td></tr>
+            </table>
+            <h3>3. 전형방법</h3>
+            <table>
+                <tr><th>모집단위</th><th>전형방법</th></tr>
+                <tr><td>인문·사회계/공학·자연계 학과(부)</td><td>서류평가 100%</td></tr>
+                <tr><td>예체능계열 일부 학과</td><td>실기고사 100%</td></tr>
+            </table>
+            <h3>4. 선발기준</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>선발방법</td><td>학업역량 35%, 진로역량 40%, 공동체역량 25%</td></tr>
+            </table>
+        `,
+        "성신여대": `
+            <h2>성신여자대학교 2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일정</th></tr>
+                <tr><td>인터넷 원서접수</td><td>2024.07.10.(수) 11:00 ~ 07.12.(수) 18:00</td></tr>
+                <tr><td>면접고사 및 실기고사/서류 제출</td><td>2024.07.24.(수)</td></tr>
+                <tr><td>최초합격자 발표</td><td>2024.08.29.(목) 10:00 예정</td></tr>
+            </table>
+            <h3>2. 전형방법</h3>
+            <table>
+                <tr><th>모집단위</th><th>전형방법</th></tr>
+                <tr><td>인문·사회계/공학·자연계 학과(부)</td><td>면접고사 100%</td></tr>
+                <tr><td>미술계 학과</td><td>면접고사 50% + 실기고사(포트폴리오심사) 50%</td></tr>
+            </table>
+            <h3>3. 모집단위 및 모집인원</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>중·고교 과정 국외 이수자(3년)</td><td>인문 11명, 자연 19명, 미술 11명<br>총 41명</td></tr>
+                <tr><td>전교육과정 국외 이수자</td><td>제한없음</td></tr>
+            </table>
+            <h3>4. 면접고사</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>인문·사회계/공학·자연계</td><td>전공계열적합성, 발전가능성 등을 종합평가 (한국어 면접)</td></tr>
+                <tr><td>미술계 학과</td><td>전공계열적합성, 발전가능성 등을 종합평가 (한국어 면접) + 포트폴리오 심사</td></tr>
+            </table>
+        `,
+        "연세대미래": `
+            <h2>연세대학교(미래캠퍼스) 2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일정</th></tr>
+                <tr><td>인터넷 원서접수</td><td>2024.07.08.(월) 10:00 ~ 07.12.(금) 17:00</td></tr>
+                <tr><td>서류제출</td><td>2024.07.12.(금) 우편소인까지 유효</td></tr>
+                <tr><td>면접시험</td><td>2024.08.30.(금) 13:00</td></tr>
+                <tr><td>합격자 발표</td><td>2024.09.06.(금) 17:00</td></tr>
+            </table>
+            <h3>2. 모집단위 및 모집인원</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>중·고교 과정 국외 이수자</td><td>28명 이내</td></tr>
+                <tr><td>전교육과정 국외 이수자</td><td>모집단위별 약간 명</td></tr>
+            </table>
+            <h3>3. 전형방법</h3>
+            <table>
+                <tr><th>모집단위</th><th>전형방법</th></tr>
+                <tr><td>전 모집단위</td><td>서류평가 100%</td></tr>
+                <tr><td>의예과, 간호학과</td><td>1단계: 서류평가 100%<br>2단계: 서류평가 60% + 면접평가 40%</td></tr>
+            </table>
+            <h3>4. 선발기준</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>전형방법</td><td>종합적으로 평가하여 합격자를 선발함</td></tr>
+            </table>
+            <h3>5. 면접고사</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>면접내용</td><td>간호학과 : 인성 및 가치관, 의예과 : 의학적 인성<br>제시문 숙지 20분, 면접 10분</td></tr>
+            </table>    
+        `,
+            "서울여대": `
+                <h2>서울여자대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>인터넷 원서접수</td><td>2024.07.09.(화) 10:00 ~ 07.12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.07.09.(화) 10:00 ~ 07.17.(수) </td></tr>
+                    <tr><td>최초합격자 발표</td><td>2024.09.02.(월)</td></tr>
+                </table>
+                <h3>2. 모집단위 및 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민과 외국인(2% 이내)</td><td>31명</td></tr>
+                    <tr><td>전교육과정 이수자</td><td>모집단위별 약간 명</td></tr>
+                </table>
+                <h3>3. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민과 외국인(2% 이내)</td><td>서류 100%</td></tr>
+                    <tr><td>전교육과정 이수자</td><td>서류 100%</td></tr>
+                </table>
+                <h3>4. 선발기준</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가요소</td><td> 전공적합성 30%, 학업수행능력 40%, 발전가능성 30%</td></tr>
+                </table>
+            `,
+            "아주대": `
+                <h2>아주대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.07.08.(월) 09:00 ~ 07.12.(금) 18:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.07.16.(화)까지</td></tr>
+                    <tr><td>수강능력시험</td><td>2024.07.28.(일) 10:00 ~ 11:30</td></tr>
+                    <tr><td>최초합격자 발표</td><td>2024.08.30.(금) 16:00 이후</td></tr>
+                </table>
+                <h3>2. 모집단위 및 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(3년)</td><td>40명 이내</td></tr>
+                    <tr><td>전교육과정 이수자</td><td>적정인원</td></tr>
+                </table>
+                <h3>3. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(3년)</td><td>수강능력시험 100%</td></tr>
+                    <tr><td>전교육과정 이수자</td><td>서류평가 100% </td></tr>
+                    <tr><td>의학과(3년, 12년), 간호학과(3년)</td><td>1단계 : 수강능력시험 100%, 2단계 : 1단계 60% + 면접 40%</td></tr>
+                </table>
+                <h3>4. 필기고사</h3>
+                <table>
+                    <tr><th>계열</th><th>과목</th><th>문항수</th><th>시간</th></tr>
+                    <tr><td>인문</td><td>영어 50점, 국어 50점</td><td>영어 25문항, 국어 25문항</td><td>국어+영어 90분</td></tr>
+                    <tr><td>자연</td><td>영어 50점, 수학 50점</td><td>영어 25문항, 수학 25문항</td><td>영어+수학 90분</td></tr>
+                    
+                </table>  
+            `,
+            "숙명여대": `
+                <h2>숙명여자대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 7.10.(수) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) ~ 7.11.(목)</td></tr>
+                    <tr><td>필기고사</td><td>2024.7.19.(금)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.9.4.(수) 17:00</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(3년)</td><td>필기고사(영어) 100%</td></tr>
+                    <tr><td>전 교육과정 이수자(12년)</td><td>서류평가 100%, 예체능계 실기 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(정원외 2%)</td><td>인문 34명, 자연 6명, 예체능 3명<br>총 43명</td></tr>
+                    <tr><td>전 교육과정 해외이수자</td><td>약간명</td></tr>
+                </table>
+                <h3>4. 필기고사</h3>
+                <table>
+                    <tr><th>계열</th><th>과목</th></tr>
+                    <tr><td>인문</td><td>영어 50점, 국어 50점</td></tr>
+                    <tr><td>자연</td><td>국어 50점, 수학 50점</td></tr>
+                </table>
+            `,
+            "한동대": `
+                <h2>한동대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) ~ 7.12.(금) 18:00까지</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) ~ 7.15.(월) 18:00까지</td></tr>
+                    <tr><td>면접고사</td><td>2024.8.24.(토) 13:00</td></tr>
+                    <tr><td>최종 합격자 발표</td><td>2024.8.30.(금) 15:00</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민과 이수자</td><td>1단계: 서류평가 100% (4배수)<br>2단계: 1단계 성적 70% + 면접 30%</td></tr>
+                    <tr><td>전교육과정 이수자</td><td>1단계: 서류평가 100% (4배수)<br>2단계: 1단계 성적 70% + 면접 30%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민과 외국인</td><td>14명</td></tr>
+                    <tr><td>전 교육과정 이수자</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가내용</td><td>본교 인재상 부합도, 의사소통 및 면접태도, 논리성, 발전가능성</td></tr>
+                </table>
+            `,
+            "을지대": `
+                <h2>을지대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.9.9.(월) ~ 9.13.(금) 18:00까지</td></tr>
+                    <tr><td>서류제출</td><td>2024.9.20.(금) 까지</td></tr>
+                    <tr><td>필기고사</td><td>2024.10.26.(토) ~ 10.27.(일)</td></tr>
+                    <tr><td>면접고사</td><td>2024.10.5.(토)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.11.22.(금)</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민과 이수자</td><td>서류평가 20% + 면접 80%</td></tr>
+                    <tr><td>전교육과정 이수자</td><td>서류평가 20% + 면접 80%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(2% 제한)</td><td>19명</td></tr>
+                    <tr><td>전 교육과정 이수자</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>의과대학</td><td>심층면접(인성+적성)<br>인성 및 사회성, 의사소통 및 언어표현능력, 과학적 지식, 면접태도, 문제파악 및 해결능력 등</td></tr>
+                    <tr><td>간호/보건/전체학부</td><td>서류기반 일반면접<br>인성 및 태도, 전공에 대한 전공적합성 등 </td></tr>
+                </table>
+            `,
+             "인제대": `
+                <h2>인제대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024. 9. 10.(화) 09:00 ~ 9. 13.(금) 18:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 9. 10.(화) ~ 9. 20.(금) 17:00</td></tr>
+                    <tr><td>면접고사(전체 모집단위)</td><td>2024. 11. 23.(토)</td></tr>
+                    <tr><td>면접고사(12년 의예과, 약학과)</td><td>2024. 11. 16.(토)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024. 12. 13.(금) 14:00</td></tr>
+                </table>
+                <h3>2. 모집단위 및 모집인원</h3>
+                <table>
+                    <tr><th>모집단위</th><th>모집인원</th></tr>
+                    <tr><td>전체 모집단위(의예과, 약학과 제외)</td><td>32명 이내</td></tr>
+                    <tr><td>의예과, 약학과</td><td>모집안함</td></tr>
+                </table>
+                <h3>3. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>전체 모집단위</td><td>면접고사 100%</td></tr>
+                    <tr><td>의예과, 약학과</td><td>1단계: 서류심사 100%, 2단계: 면접고사 100%</td></tr>
+                </table>
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>전체 모집단위</td><td>기본소양, 인성, 전공적합성, 의사표현능력 등을 종합적 평가</td></tr>
+                    <tr><td>의예과</td><td>지성 : 생명과학 1,2, 화학 1,2 <br>인성 : 다중미니면접 </td></tr>
+                    <tr><td>의예과</td><td>지성 : 생명과학 1,2, 화학 1,2 <br>인성 : 심층면접 </td></tr>
+                </table>
+        
+            `,
+            "건양대": `
+            <h2>건양대학교 2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일정</th></tr>
+                <tr><td>원서접수</td><td>2024.7.8(월)~12(금)18:00까지</td></tr>
+                <tr><td>서류제출</td><td>2024.7.8(월)~19(금)15:00까지</td></tr>
+                <tr><td>면접고사</td><td>2024.8.10(토) 09:30 ~</td></tr>
+                <tr><td>최초합격자 발표</td><td>2024.8.14(수) 15:00</td></tr>
+            </table>
+            <h3>2. 모집인원</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>재외국민과 외국인(2% 이내)</td><td>30명</td></tr>
+                <tr><td>전 교육과정 이수자</td><td>제한없음</td></tr>
+            </table>
+            <h3>3. 전형방법</h3>
+            <table>
+                <tr><th>전형유형</th><th>전형방법</th></tr>
+                <tr><td>의학과, 심리상담치료학과</td><td>1단계 : 서류 적부판정(5배수)<br>2단계 : 면접 100%</td></tr>
+                <tr><td>간호학과, 사회복지학과, 보건계열학과</td><td>1단계 : 어학 성적 100%(5배수)<br>2단계 : 면접 100%</td></tr>
+            </table>
+            <h3>4. 면접고사</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>면접항목</td><td>인성, 발전가능성, 전공적합성</td></tr>
+            </table>
+        `,
+        "순천향대": `
+            <h2>순천향대학교 2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일정</th></tr>
+                <tr><td>원서접수</td><td>2024. 7. 8.(월) 10:00 ~ 12.(금) 17:00</td></tr>
+                <tr><td>서류제출</td><td>2024. 7. 8.(월) ~ 7. 17.(수)</td></tr>
+                <tr><td>면접고사</td><td>2024. 8. 20.(화)</td></tr>
+                <tr><td>합격자 발표</td><td>2024. 8. 27.(화) 17:00</td></tr>
+            </table>
+            <h3>2. 모집인원</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>재외국민과 외국인(2% 이내)</td><td>15명 (통합선발)</td></tr>
+                <tr><td>전 교육과정 이수자</td><td>10명 (통합선발)</td></tr>
+            </table>
+            <h3>3. 전형방법</h3>
+            <table>
+                <tr><th>전형유형</th><th>전형방법</th></tr>
+                <tr><td>재외국민과 외국인(2% 이내)</td><td>1단계: 서류 100%<br>2단계: 1단계 성적 70% + 면접 30%</td></tr>
+                <tr><td>전 교육과정 이수자</td><td>1단계: 서류 100%<br>2단계: 1단계 성적 70% + 면접 30%</td></tr>
+            </table>
+            <h3>4. 면접고사</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>평가요소</td><td>전공적합성, 발전가능성, 의사소통능력</td></tr>
+            </table>
+        `,
+        "인천대": `
+            <h2>인천대학교 2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일정</th></tr>
+                <tr><td>원서접수</td><td>2024. 7. 8.(월) 10:00 ~ 7. 12.(금) 17:00</td></tr>
+                <tr><td>서류제출</td><td>2024. 7. 8.(월) ~ 7. 16.(화) 17:00까지</td></tr>
+                <tr><td>면접고사</td><td>2024. 8. 9.(금)</td></tr>
+                <tr><td>최초합격자 발표</td><td>2024. 9. 6.(금)까지</td></tr>
+            </table>
+            <h3>2. 모집인원</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>재외국민(정원외 2%)</td><td>50명</td></tr>
+                <tr><td>전 교육과정 이수자</td><td>제한없음</td></tr>
+            </table>
+            <h3>3. 전형방법</h3>
+            <table>
+                <tr><th>전형유형</th><th>전형방법</th></tr>
+                <tr><td>재외국민과 외국인(2% 이내)</td><td>면접고사 100% (공연예술학과 : 실기고사 100%)</td></tr>
+                <tr><td>전 교육과정 이수자</td><td>면접고사 100%</td></tr>
+            </table>
+            <h3>4. 면접고사</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>평가요소</td><td>전공역량, 발전역량, 의사소통역량</td></tr>
+            </table>
+        `,
+        "용인대": `
+                <h2>용인대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024. 7. 8.(월) 10:00 ~ 12.(금) 15:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 7. 26.(금) 15:00까지</td></tr>
+                    <tr><td>면접고사</td><td>2024. 7. 23.(화)</td></tr>
+                    <tr><td>최초합격자 발표</td><td>2024. 10. 15.(화) 15:00 이후</td></tr>
+                </table>
+                <h3>2. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(정원외2%)</td><td>총 25명</td></tr>
+                    <tr><td>전 교육과정 이수자</td><td>제한없음</td></tr>
+                </table>
+                <h3>3. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민과 외국인(2% 이내)</td><td>서류 적/부 판정 + 면접고사 100%</td></tr>
+                    <tr><td>전 교육과정 이수자</td><td>서류 100%</td></tr>
+                </table>
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평기기준</td><td>기본소양(인성 및 태도, 사고력, 표현력)<br>전공적성(이해력, 논리성, 표현력)</td></tr>
+                </table>
+            `,
+            "건국글": `
+                <h2>건국대학교 글로컬캠퍼스 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024. 7. 8.(월) 10:00 ~ 7. 12.(금) 18:00</td></tr>
+                    <tr><td>서류제출</td><td>2024. 7. 8.(월) ~ 7. 15.(월) 17:00</td></tr>
+                    <tr><td>면접고사</td><td>2024. 8. 20.(화)</td></tr>
+                    <tr><td>합격자 발표</td><td>2024. 8. 28.(수) 14:00 예정</td></tr>
+                </table>
+                <h3>2. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(정원외2%)</td><td>총 18명(의예과 5명 이내)</td></tr>
+                    <tr><td>전 교육과정 이수자</td><td>제한없음</td></tr>
+                </table>
+                <h3>3. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>전 모집단위</td><td>면접고사 100%</td></tr>
+                    <tr><td>의예과</td><td>1단계 : 서류 100%(5배수), 2단계 : 1단계 50% + 면접고사 50%</td></tr>
+                </table>
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>평가영역</th><th>평가항목</th><th>반영비율</th></tr>
+                    <tr><td>융합적 탐구영역</td><td>종합적 사고력 / 지식탐구능력</td><td>40%</td></tr>
+                    <tr><td>협력적 소통영역 / 글로컬 리더영역</td><td>의사소통 / 인성 / 대인관계 / 리더십</td><td>35%</td></tr>
+                    <tr><td>창의적 혁신영역</td><td>창의력 / 자기관리</td><td>25%</td></tr>
+                </table>
+            `,
+            "한성대": `
+                <h2>한성대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 2024.7.12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 10:00 ~ 2024.7.12.(금) </td></tr>
+                    <tr><td>면접고사</td><td>2024.8.14.(수)</td></tr>
+                    <tr><td>최초 합격자 발표</td><td>2024.8.30.(금) 예정</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(3년)</td><td>면접 100%</td></tr>
+                    <tr><td>전 교육과정(12년)</td><td>면접 100%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(3년)</td><td>29명 (주간 19명, 야간 10명)</td></tr>
+                    <tr><td>전 교육과정(12년)</td><td>제한없음</td></tr>
+                </table>
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가영역</td><td>면접 기초자료서 작성 및 제출<br>교육과정의 충실한 이수, 적성, 인성 및 성장잠재력 등을 종합적으로 평가함</td></tr>
+                </table>
+            `,
+            "차의과대": `
+                <h2>차의과학대학교 2025학년도 재외국민 특별전형</h2>
+                <h3>1. 전형일정</h3>
+                <table>
+                    <tr><th>구분</th><th>일정</th></tr>
+                    <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 2024.7.12.(금) 17:00</td></tr>
+                    <tr><td>서류제출</td><td>2024.7.8.(월) 10:00 ~ 2024.7.16.(화) 17:00</td></tr>
+                    <tr><td>면접평가</td><td>2024.8.21.(수) ~ 2024.8.25.(일) 중 지정일</td></tr>
+                    <tr><td>합격자 발표</td><td>2024.9.10.(화) 16:00</td></tr>
+                </table>
+                <h3>2. 전형방법</h3>
+                <table>
+                    <tr><th>전형유형</th><th>전형방법</th></tr>
+                    <tr><td>재외국민(3년)</td><td>서류평가 30% + 면접평가 70%</td></tr>
+                    <tr><td>전 교육과정(12년)</td><td>서류평가 30% + 면접평가 70%</td></tr>
+                </table>
+                <h3>3. 모집인원</h3>
+                <table>
+                    <tr><th>전형유형</th><th>모집인원</th></tr>
+                    <tr><td>재외국민(3년)</td><td>10명(간호 4명 이내)</td></tr>
+                    <tr><td>전 교육과정(12년)</td><td>제한 없음</td></tr>
+                </table>
+                <h3>4. 면접고사</h3>
+                <table>
+                    <tr><th>구분</th><th>내용</th></tr>
+                    <tr><td>평가내용</td><td>진로역량, 인성, 발전가능성, 한국어 능력</td></tr>
+                </table>
+            `,
+            "한국기술교육대": `
+            <h2>한국기술교육대학교 2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일정</th></tr>
+                <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 7.12.(금)</td></tr>
+                <tr><td>서류제출</td><td>2024.7.18.(금) 까지</td></tr>
+                <tr><td>면접고사</td><td>2024.7.31.(수)</td></tr>
+                <tr><td>합격자 발표</td><td>2024.8.23.(금)</td></tr>
+            </table>
+            <h3>2. 모집단위 및 모집인원</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>재외국민(3년)</td><td>10명</td></tr>
+                <tr><td>전 교육과정</td><td>제한없음</td></tr>
+            </table>
+            <h3>3. 전형방법</h3>
+            <table>
+                <tr><th>전형유형</th><th>전형방법</th></tr>
+                <tr><td>재외국민(3년)</td><td>구술면접고사 100%</td></tr>
+                <tr><td>전 교육과정(12년)</td><td>구술면접고사 100%</td></tr>
+            </table>
+            <h3>4. 면접고사</h3>
+            <table>
+                <tr><th>평가항목</th><th>평가방법</th></tr>
+                <tr><td>적성 및 학업의지, 서류평가, 외국어 구사능력</td><td>수험생 1~3인 1조로 면접위원 2~3명과 각각 10분 내외 교차 면접 실시</td></tr>
+            </table>
+        `,
+        "목포해양대": `
+            <h2>목포해양대학교 2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일정</th></tr>
+                <tr><td>원서접수</td><td>2024.7.8.(월) 09:00 ~ 7.12.(금) 18:00</td></tr>
+                <tr><td>서류제출</td><td>2024.7.8.(월) 09:00 ~ 7.26.(금) 18:00</td></tr>
+                <tr><td>면접고사</td><td>2024.8.8.(목)</td></tr>
+                <tr><td>합격자 발표</td><td>2024.8.22.(목)</td></tr>
+            </table>
+            <h3>2. 모집단위 및 모집인원</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>재외국민(3년)</td><td>13명(해사대학 및 해양공과대학)</td></tr>
+                <tr><td>전 교육과정(12년)</td><td>제한없음</td></tr>
+            </table>
+            <h3>3. 전형방법</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>재외국민(3년)</td><td>면접고사 100%</td></tr>
+                <tr><td>전 교육과정(12년)</td><td>면접고사 100%</td></tr>
+            </table>
+            <h3>4. 면접고사</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>평가방법</td><td>진로 계획, 전공기초 소양 및 전공 적합도, 학문적 열정, 적성 및 인성 등 평가</td></tr>
+            </table> 
+        `,
+        "서울과기대": `
+            <h2>서울과학기술대학교 2025학년도 재외국민 특별전형</h2>
+            <h3>1. 전형일정</h3>
+            <table>
+                <tr><th>구분</th><th>일정</th></tr>
+                <tr><td>원서접수</td><td>2024.7.8.(월) 10:00 ~ 7.12.(금) 17:00</td></tr>
+                <tr><td>서류제출</td><td>2024.7.8.(월) 10:00 ~ 7.12.(금) 17:00</td></tr>
+                <tr><td>면접고사</td><td>2024.8.16.(금) 10:00~</td></tr>
+                <tr><td>합격자 발표</td><td>2024.8.26.(월) 14:00 </td></tr>
+            </table>
+            <h3>2. 모집단위 및 모집인원</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>재외국민(3년)</td><td>제한없음</td></tr>
+                <tr><td>전 교육과정(12년)</td><td>제한없음</td></tr>
+            </table>
+            <h3>3. 전형방법</h3>
+            <table>
+                <tr><th>전형유형</th><th>모집인원</th></tr>
+                <tr><td>재외국민(3년)</td><td>자격심사 + 면접고사 100%</td></tr>
+                <tr><td>전 교육과정(12년)</td><td>자격심사 + 면접고사 100%</td></tr>
+            </table>
+            <h3>4. 면접고사</h3>
+            <table>
+                <tr><th>구분</th><th>내용</th></tr>
+                <tr><td>평가방법</td><td>품성 및 표현력, 전공수행 및 기초능력</td></tr>
+            </table>
+        `
+    };
+
+    function showUniversity() {
+        const selectedUniversity = document.getElementById('universitySelect').value;
+        const resultContainer = document.getElementById('resultContainer');
+        if (selectedUniversity && universityInfo[selectedUniversity]) {
+            resultContainer.innerHTML = universityInfo[selectedUniversity];
+        } else {
+            resultContainer.innerHTML = '';
+        }
+    }
+</script>
+</body>
+</html>

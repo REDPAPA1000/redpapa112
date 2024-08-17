@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025학년도 주요대학 경쟁률</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', 'Nanum Myeongjo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f7e3e1, #e3f0f7);
+            min-height: 100vh;
+            position: relative;
+        }
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/api/placeholder/1080/720');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #3498db;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            font-size: 2.5em;
+        }
+        h2, h3 {
+            color: #000000;
+            text-align: left;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.5em; }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .main-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .main-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .main-button:hover {
+            background-color: #2980b9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+        }
+        th {
+            background-color: #90EE90;
+            font-weight: bold;
+            color: #006400;
+            text-align: center;
+        }
+        td {
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f0fff0;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1>2025학년도 주요대학 경쟁률</h1>
+        <select id="competitionUniversitySelect">
+            <option value="">대학을 선택하세요</option>
+            <option value="가천대">가천대학교</option>
+            <option value="가톨릭대">가톨릭대학교</option>
+<option value="건국대">건국대학교</option>
+<option value="건국글">건국대학교 글로컬캠퍼스</option>
+<option value="건양대">건양대학교</option>
+<option value="경기대">경기대학교</option>
+<option value="경희대">경희대학교</option>
+<option value="고려대">고려대학교</option>
+<option value="고려대세종">고려대학교 세종캠퍼스</option>
+<option value="광운대">광운대학교</option>
+<option value="국민대">국민대학교</option>
+<option value="단국대">단국대학교</option>
+<option value="대구가톨릭대">대구가톨릭대학교</option>
+<option value="덕성여대">덕성여자대학교</option>
+<option value="동국대">동국대학교</option>
+<option value="동덕여대">동덕여자대학교</option>
+<option value="목포해양대">목포해양대학교</option>
+<option value="부산대">부산대학교</option>
+<option value="삼육대">삼육대학교</option>
+<option value="상명대">상명대학교</option>
+<option value="서강대">서강대학교</option>
+<option value="서울과기대">서울과학기술대학교</option>
+<option value="서울대">서울대학교</option>
+<option value="서울여대">서울여자대학교</option>
+<option value="성균관대">성균관대학교</option>
+<option value="성신여대">성신여자대학교</option>
+<option value="세종대">세종대학교</option>
+<option value="순천향대">순천향대학교</option>
+<option value="숙명여대">숙명여자대학교</option>
+<option value="숭실대">숭실대학교</option>
+<option value="아주대">아주대학교</option>
+<option value="연세대">연세대학교</option>
+<option value="연세대미래">연세대학교(미래캠퍼스)</option>
+<option value="을지대">을지대학교</option>
+<option value="용인대">용인대학교</option>
+<option value="이화여대">이화여자대학교</option>
+<option value="인제대">인제대학교</option>
+<option value="인천대">인천대학교</option>
+<option value="인하대">인하대학교</option>
+<option value="중앙대">중앙대학교</option>
+<option value="차의과대">차의과학대학교</option>
+<option value="한국기술교육대">한국기술교육대학교</option>
+<option value="한국외대">한국외국어대학교</option>
+<option value="한국항공대">한국항공대학교</option>
+<option value="한국해양대">한국해양대학교</option>
+<option value="한동대">한동대학교</option>
+<option value="한성대">한성대학교</option>
+<option value="한양대">한양대학교</option>
+<option value="한양대ERICA">한양대학교 ERICA</option>
+<option value="홍익대">홍익대학교</option>
+        </select>
+        <a href="index.html" class="main-button">메인으로</a>
+    </div>
+
+    <script>
+        const universities = [
+        { name: '가천대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190411.html' },
+        { name: '가톨릭관동대', url: 'https://ratio.uwayapply.com/Sl5KcldhVlc4TjlKJmB9YWhKI2ZUZg==' },
+        { name: '가톨릭대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10030241.html' },
+        { name: '강남대', url: 'https://ratio.uwayapply.com/Sl5KTThXclc4OUomYH1haEojZlRm' },
+        { name: '건국대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10080221.html' },
+        { name: '건국대 글로컬', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10090711.html' },
+        { name: '건양대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10100561.html' },
+        { name: '경기대', url: 'https://ratio.uwayapply.com/Sl5KJXJyV2FiOUomYH1haEojZlRm' },
+       
+        { name: '경상대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10170641.html' },
+        { name: '경희대', url: 'https://ratio.uwayapply.com/power/?ratioURL=%2F%2Fratio.uwayapply.com%2FSl5KOnw5SiZgfWFoSiNmVGY%3D&applyURL=http%3A%2F%2Fipsi3.uwayapply.com%2Ffores%2Fkhu%2F%3FCHA%3D1&ratioNM=%B0%E6%C8%F1%B4%EB%C7%D0%B1%B3&univURL=http://www.khu.ac.kr' },
+        { name: '고려대', url: 'https://ratio.uwayapply.com/power/?ratioURL=%2F%2Fratio.uwayapply.com%2FSl5KOGB9YTlKJmB9YWhKI2ZUZg%3D%3D&applyURL=http%3A%2F%2Fipsi2.uwayapply.com%2Ffores%2Fkorea%2F%3FCHA%3D1&ratioNM=%B0%ED%B7%C1%B4%EB%C7%D0%B1%B3(%BC%AD%BF%EF)&univURL=http://www.korea.ac.kr' },
+        { name: '고려대(세종)', url: 'https://ratio.uwayapply.com/Sl5KcldhL2AmOzhgfWE5SiZgfWFoSiNmVGY=' },
+        { name: '광운대', url: 'https://ratio.uwayapply.com/Sl5KTjlKJmB9YWhKI2ZUZg==' },
+        { name: '국민대', url: 'https://ratio.uwayapply.com/Sl5KVyVNOWFhOUomYH1haEojZlRm' },
+       
+        { name: '단국대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10420311.html' },
+        { name: '대전대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10500671.html' },
+        { name: '덕성여대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10530441.html' },
+        { name: '동국대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10550351.html' },
+        { name: '동덕여대', url: 'https://ratio.uwayapply.com/power/?ratioURL=%2F%2Fratio.uwayapply.com%2FSl5KOTpWcldhVkomYH1haEojZlRm&applyURL=http%3A%2F%2Fipsi1.uwayapply.com%2Ffores%2Fdongduk%2F%3FCHA%3D1&ratioNM=%B5%BF%B4%F6%BF%A9%C0%DA%B4%EB%C7%D0%B1%B3&univURL=https://ipsi.dongduk.ac.kr/ipsi/main/index.do' },
+        { name: '명지대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10650481.html' },
+       
+        { name: '부경대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10720261.html' },
+        { name: '부산대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio12100421.html' },
+        { name: '삼육대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760451.html' },
+        { name: '상명대', url: 'https://ratio.uwayapply.com/power/?ratioURL=%2F%2Fratio.uwayapply.com%2FSl5KOk0mSiZgfWFoSiNmVGY%3D&applyURL=http%3A%2F%2Fipsi1.uwayapply.com%2Ffores%2Fsmu%2F%3FCHA%3D1&ratioNM=%BB%F3%B8%ED%B4%EB%C7%D0%B1%B3&univURL=http://www.smu.ac.kr' },
+        { name: '서강대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio12050341.html' },
+        { name: '서울과학기술대', url: 'https://ratio.uwayapply.com/Sl5KMDpXJkomYH1haEojZlRm' },
+        { name: '서울여대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10860341.html' },
+        { name: '성균관대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10920301.html' },
+        { name: '성신여대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10930011.html' },
+        { name: '세종대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10950541.html' },
+        { name: '수원대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970321.html' },
+        { name: '숙명여대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10980831.html' },
+        { name: '순천향대', url: 'https://ratio.uwayapply.com/Sl5KfEwmSiZgfWFoSiNmVGY=' },
+        { name: '숭실대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11010491.html' },
+        { name: '아주대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11040481.html' },
+        { name: '연세대(서울)', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11080561.html' },
+        { name: '연세대(미래)', url: 'https://ratio.uwayapply.com/power/?ratioURL=%2F%2Fratio.uwayapply.com%2FSl5KZiVgJldhYkomYH1haEojZlRm&applyURL=http%3A%2F%2Fipsi2.uwayapply.com%2Ffores%2Fyonsei2%2F%3FCHA%3D1&ratioNM=%BF%AC%BC%BC%B4%EB%C7%D0%B1%B3(%B9%CC%B7%A1)&univURL=https://admission.yonsei.ac.kr/mirae/admission/html/main/main.asp' },
+        { name: '용인대', url: 'https://ratio.uwayapply.com/Sl5KVyVyV2FiSiZgfWFoSiNmVGY=' },
+        { name: '우석대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11150441.html' },
+       
+        { name: '이화여대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11201001.html' },
+       
+        { name: '인하대', url: 'https://ratio.uwayapply.com/power/?ratioURL=%2F%2Fratio.uwayapply.com%2FSl5KOHxXJUomYH1haEojZlRm&applyURL=http%3A%2F%2Fipsi1.uwayapply.com%2Ffores%2Finha%2F%3FCHA%3D1&ratioNM=%C0%CE%C7%CF%B4%EB%C7%D0%B1%B3&univURL=http://www.inha.ac.kr' },
+        { name: '전남대', url: 'https://ratio.uwayapply.com/Sl5KOlcvSiZgfWFoSiNmVGY=' },
+        { name: '전북대', url: 'https://ratio.uwayapply.com/power/?ratioURL=%2F%2Fratio.uwayapply.com%2FSl5KOldCL0omYH1haEojZlRm&applyURL=http%3A%2F%2Fipsi1.uwayapply.com%2Ffores%2Fjbnu%2F%3FCHA%3D1&ratioNM=%C0%FC%BA%CF%B4%EB%C7%D0%B1%B3&univURL=http://www.jbnu.ac.kr/main/main.php' },
+        { name: '제주대', url: 'https://ratio.uwayapply.com/Sl5KOlc6L2AvSiZgfWFoSiNmVGY=' },
+        { name: '중앙대', url: 'https://ratio.uwayapply.com/power/?ratioURL=%2F%2Fratio.uwayapply.com%2FSl5KOjhMSiZgfWFoSiNmVGY%3D&applyURL=http%3A%2F%2Fipsi3.uwayapply.com%2Ffores%2Fcau%2F%3FCHA%3D1&ratioNM=%C1%DF%BE%D3%B4%EB%C7%D0%B1%B3&univURL=http://www.cau.ac.kr' },
+        { name: '차의과대', url: 'https://ratio.uwayapply.com/Sl5KOHxMSiZgfWFoSiNmVGY=' },
+        { name: '충남대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11400351.html' },
+        { name: '충북대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11410491.html' },
+            { name: '한국외대', url: 'https://ratio.uwayapply.com/power/?ratioURL=%2F%2Fratio.uwayapply.com%2FSl5KJmg6fEomYH1haEojZlRm&applyURL=http%3A%2F%2Fipsi2.uwayapply.com%2Ffores%2Fhufs%2F%3FCHA%3D1&ratioNM=%C7%D1%B1%B9%BF%DC%B1%B9%BE%EE%B4%EB%C7%D0%B1%B3&univURL=http://www.hufs.ac.kr' },
+            { name: '한국해양대', url: 'https://ratio.uwayapply.com/Sl5KOmFNOUomYH1haEojZlRm' },
+            { name: '한동대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11570501.html' },
+            { name: '한서대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11600681.html' },
+            { name: '한성대', url: 'https://ratio.uwayapply.com/power/?ratioURL=%2F%2Fratio.uwayapply.com%2FSl5Kclc6Jlc4fEomYH1haEojZlRm&applyURL=http%3A%2F%2Fipsi1.uwayapply.com%2Ffores%2Fhansung%2F%3FCHA%3D1&ratioNM=%C7%D1%BC%BA%B4%EB%C7%D0%B1%B3&univURL=https://enter.hansung.ac.kr/' },
+            { name: '한양대12년', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11640351.html' },
+            { name: '한양대3년', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11640341.html' },
+            { name: '한양대 에리카', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11650551.html' },
+            { name: '항공대(12특)', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11540681.html' },
+            { name: '항공대(3특)', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11540671.html' },
+            { name: '홍익대', url: 'https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11720481.html' }
+        ];
+
+        document.getElementById('competitionUniversitySelect').addEventListener('change', (event) => {
+            const selectedValue = event.target.value;
+            if (selectedValue) {
+                const selected = universities.find(uni => uni.name === selectedValue);
+                if (selected && selected.url) {
+                    window.open(selected.url, '_blank', 'noopener,noreferrer');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
