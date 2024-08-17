@@ -1,8 +1,11 @@
 const CACHE_NAME = '2025학년도 특례어디가';
 const urlsToCache = [
-  './',
-  './index.html',
-  './manifest.json',
+  '/',
+  '/index.html',
+  '/recruitment-guide.html',
+  '/competition-rate.html',
+  '/manifest.json',
+  '/icon-192x192.png',
   '/icon-512x512.png',
 ];
 
