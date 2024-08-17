@@ -5,19 +5,19 @@
   "dir": "ltr",
   "display": "standalone",
   "orientation": "any",
-  "scope": "/redpapa112/",
-  "start_url": "/redpapa112/",
+  "scope": "/whichuni/",
+  "start_url": "/whichuni/",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "categories": ["life"],
   "icons": [
     {
-      "src": "/redpapa112/icon-192x192.png",
+      "src": "/whichuni/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/redpapa112/icon-512x512.png",
+      "src": "/whichuni/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
